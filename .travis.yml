@@ -1,4 +1,5 @@
-sudo: false
+dist: trusty
+sudo: required
 
 language: node_js
 node_js:
@@ -6,9 +7,6 @@ node_js:
 
 before_install:
   - stty cols 80
-
-dist: trusty
-sudo: required
 
 addons:
   firefox: latest
@@ -28,7 +26,4 @@ before_script:
 script:
   - npm run build
   - npm run export
-  - npm start &
-  - sleep 5s
   - npm test
-  - killall node

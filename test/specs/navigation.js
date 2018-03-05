@@ -1,8 +1,7 @@
 import Page from '../models/Page';
 
-const local = process.env.NODE_ENV !== 'production';
-
-local ? fixture `navigation test`.page `http://localhost:3000/` : fixture `navigation test`.page `https://bartekus.github.io/dyeui/`;
+fixture `navigation test`
+  .page `http://localhost:3000/`;
 
 test('Base Navigation Functionality', async t => {
   const page = new Page();

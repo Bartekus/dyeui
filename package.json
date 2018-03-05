@@ -13,7 +13,7 @@
     "e2e:chrome": "testcafe chrome test/specs/",
     "e2e:firefox": "testcafe firefox test/specs/",
     "check": "npm-run-all --parallel e2e:*",
-    "test": "testcafe chrome,firefox test/specs/"
+    "test": "testcafe chrome,firefox test/specs/ --app \"npm start\""
   },
   "author": "Bartek Kus",
   "repository": {
