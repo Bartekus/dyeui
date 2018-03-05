@@ -5,7 +5,7 @@
   "plugins": [
     [
       "transform-define",
-      "./env-config.js"
+      "./env.config.js"
     ]
   ]
 }

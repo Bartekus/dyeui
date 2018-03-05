@@ -1,4 +1,4 @@
-const debug = process.env.NODE_ENV !== 'production';
+const assetPrefix = process.env.ENV_GH_PAGES ? '/dyeui/' : '';
 
 module.exports = {
   exportPathMap: function () {
@@ -7,5 +7,5 @@ module.exports = {
       '/about': { page: '/about' }
     }
   },
-  assetPrefix: !debug ? '/dyeui/' : ''
+  assetPrefix
 };
