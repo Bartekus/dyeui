@@ -11,7 +11,7 @@
     "export": "next export",
     "gh:build": "ENV_GH_PAGES=true next build",
     "gh:export": "ENV_GH_PAGES=true next export",
-    "out:include": "sed -i '' '/out\//d' ./.gitignore",
+    "out:include": "sed -i '' '/out\\//d' ./.gitignore",
     "out:exclude": "echo 'out/' >> .gitignore",
     "predeploy": "npm run clean && run-s gh:build gh:export out:include",
     "deploy": "touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
