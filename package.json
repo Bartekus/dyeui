@@ -1,6 +1,6 @@
 {
   "name": "dyeui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Dyeui is a Next.js/React UI Styled System with a design theme, built-in styleguide as well as test suite configuration",
   "main": "src/App.js",
   "scripts": {
