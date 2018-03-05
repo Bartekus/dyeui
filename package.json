@@ -12,8 +12,8 @@
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "e2e:chrome": "testcafe chrome test/specs/",
     "e2e:firefox": "testcafe firefox test/specs/",
-    "test:p": "npm-run-all --parallel e2e:*",
-    "test": "npm-run-all --serial e2e:*"
+    "check": "npm-run-all --parallel e2e:*",
+    "test": "testcafe chrome,firefox test/specs/"
   },
   "author": "Bartek Kus",
   "repository": {
