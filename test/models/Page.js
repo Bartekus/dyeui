@@ -8,10 +8,12 @@ export default class Page {
       siteNav: {
         about: Selector(Target.siteNav.about),
         home: Selector(Target.siteNav.home),
+        styleguide: Selector(Target.siteNav.styleguide),
       },
       body: {
         about: Selector('p').withText('About content will go here...'),
         home: Selector('p').withText('Index content will go here...'),
+        styleguide: Selector('p').withText('Introduction content goes here'),
       },
     };
   }

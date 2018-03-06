@@ -11,8 +11,13 @@ test('Base Navigation Functionality', async t => {
     .expect(page.navigateTo('about')).ok()
     .expect(page.currentlyOn('about')).ok();
 
-  await t // Navigate back to Home page
+  await t // Navigate to Styleguide page
     .expect(page.currentlyOn('about')).ok()
+    .expect(page.navigateTo('styleguide')).ok()
+    .expect(page.currentlyOn('styleguide')).ok();
+
+  await t // Navigate back to Home page
+    .expect(page.currentlyOn('styleguide')).ok()
     .expect(page.navigateTo('home')).ok()
     .expect(page.currentlyOn('home')).ok();
 
